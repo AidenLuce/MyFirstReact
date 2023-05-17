@@ -40,7 +40,7 @@ const Book=()=>{
 }
 const Image=()=><img src='https://m.media-amazon.com/images/I/518+jXvFO6L._SY344_BO1,204,203,200_.jpg' alt='The Covenant of Water'/>
 const Title=()=><h2>The Covenant of Water</h2>
-const Author=()=><h4>Abraham Verghese</h4>
+const Author=()=><h4 style={{color: '#617d98', fontSize: '0.75rem', marginTop: '0.5rem'}}>Abraham Verghese</h4>
 
 
 
