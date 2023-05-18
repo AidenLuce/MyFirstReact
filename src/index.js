@@ -18,17 +18,17 @@ const books=[
 
 function BookList(){
     return(
-       <section className="bookList">{newNames}</section>
+       <section className="bookList">
+           {books.map((book)=>{
+               const {img, title, author}=book
+               return(
+                   <Book img={img} title={title} author={author}/>
+               );
+           })}
+       </section>
     )
 }
 
-const names=['john','peter','shawn'];
-const newNames= names.map((name)=>{
-    return (
-        <h1>{name}</h1>
-    )
-})
-console.log(newNames)
 
 
 
