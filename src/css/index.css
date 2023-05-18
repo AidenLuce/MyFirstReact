@@ -18,6 +18,7 @@ body{
 @media screen and (min-width: 768px){
     .bookList{
         grid-template-columns: repeat(3,1fr);
+        align-items: start;
     }
 }
 .book{
@@ -38,4 +39,7 @@ body{
     color: #617d98;
     font-size: .75rem;
     margin-top: .5rem;
+}
+.book p{
+    margin: 1rem 0 0.5rem;
 }

@@ -25,7 +25,10 @@ import './css/index.css'
 function BookList(){
     return(
        <section className="bookList">
-           <Book author={firstBook.author} title={firstBook.title} img={firstBook.img}/>
+           <Book author={firstBook.author} title={firstBook.title} img={firstBook.img}>
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur eius eligendi eum eveniet ipsam, minus odit pariatur recusandae repudiandae vel? Architecto facere incidunt libero maxime modi mollitia nostrum quis sit?</p>
+               <button>click me</button>
+           </Book>
            <Book author={secondBook.author} title={secondBook.title} img={secondBook.img}/>
        </section>
     )
@@ -33,13 +36,14 @@ function BookList(){
 
 
 const Book=(props)=>{
-    const {img, title, author} = props;
+    const {img, title, author, children} = props;
     console.log(props)
     return (
         <article className="book">
             <img src={img} alt={title}/>
             <h2>{title}</h2>
             <h4>{author}</h4>
+            {children}
         </article>
     )
 }
