@@ -7,12 +7,14 @@ const books=[
     {
         author: 'Abraham Verghese',
         title: 'The Covenant of Water',
-        img: 'https://m.media-amazon.com/images/I/518+jXvFO6L._SY344_BO1,204,203,200_.jpg'
+        img: 'https://m.media-amazon.com/images/I/518+jXvFO6L._SY344_BO1,204,203,200_.jpg',
+        id:1,
     },
     {
         author: 'James Clear',
         title: 'Atomic Habits',
-        img: 'https://m.media-amazon.com/images/I/513Y5o-DYtL.jpg'
+        img: 'https://m.media-amazon.com/images/I/513Y5o-DYtL.jpg',
+        id:2,
     },
 ]
 
@@ -20,9 +22,10 @@ function BookList(){
     return(
        <section className="bookList">
            {books.map((book)=>{
-               const {img, title, author}=book
+               const {img, title, author, id}=book
                return(
-                   <Book img={img} title={title} author={author}/>
+                   <Book img={img} title={title} author={author}
+                   key={id}/>
                );
            })}
        </section>
