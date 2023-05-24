@@ -1,14 +1,24 @@
+import book1 from './img/book1.jpg';
+import book2 from './img/book2.jpg';
+import book3 from './img/book3.jpg';
+
 export const books=[
     {
         author: 'Abraham Verghese',
         title: 'The Covenant of Water',
-        img: 'https://m.media-amazon.com/images/I/518+jXvFO6L._SY344_BO1,204,203,200_.jpg',
+        img: book1,
         id:1,
     },
     {
         author: 'James Clear',
         title: 'Atomic Habits',
-        img: 'https://m.media-amazon.com/images/I/513Y5o-DYtL.jpg',
+        img: book2,
         id:2,
+    },
+    {
+        author: 'Robert Greene',
+        title: 'The 48 Laws of Power',
+        img: book3,
+        id:3,
     },
 ]
