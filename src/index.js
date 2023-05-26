@@ -9,11 +9,14 @@ import Book from './Books.js'
 function BookList(){
 
     return(
-       <section className="bookList">
-           {books.map((book,index)=>{
-               return <Book {...book} key={book.id} number={index}/>
-           })}
-       </section>
+        <React.Fragment>
+            <h1>Amazon Best Sellers</h1>
+           <section className="bookList">
+               {books.map((book,index)=>{
+                   return <Book {...book} key={book.id} number={index}/>
+               })}
+           </section>
+        </React.Fragment>
     );
 }
 
